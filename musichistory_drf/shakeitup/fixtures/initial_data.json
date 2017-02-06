@@ -1,0 +1,225 @@
+[{
+    "model": "shakeitup.album",
+    "pk": 1,
+    "fields": {
+        "album_title": "A seat at the Table",
+        "date_released": "2017-02-06"
+    }
+}, {
+    "model": "shakeitup.album",
+    "pk": 2,
+    "fields": {
+        "album_title": "Starboy",
+        "date_released": "2017-02-06"
+    }
+}, {
+    "model": "shakeitup.album",
+    "pk": 3,
+    "fields": {
+        "album_title": "L'Etonnant",
+        "date_released": "2017-02-06"
+    }
+}, {
+    "model": "shakeitup.genre",
+    "pk": 1,
+    "fields": {
+        "genre_type": "R&B"
+    }
+}, {
+    "model": "shakeitup.genre",
+    "pk": 2,
+    "fields": {
+        "genre_type": "Pop"
+    }
+}, {
+    "model": "shakeitup.genre",
+    "pk": 3,
+    "fields": {
+        "genre_type": "Dance"
+    }
+}, {
+    "model": "shakeitup.genre",
+    "pk": 4,
+    "fields": {
+        "genre_type": "Jazz"
+    }
+}, {
+    "model": "shakeitup.album_by_genre",
+    "pk": 1,
+    "fields": {
+        "genre": 1,
+        "album": 1
+    }
+}, {
+    "model": "shakeitup.album_by_genre",
+    "pk": 2,
+    "fields": {
+        "genre": 2,
+        "album": 1
+    }
+}, {
+    "model": "shakeitup.album_by_genre",
+    "pk": 3,
+    "fields": {
+        "genre": 2,
+        "album": 2
+    }
+}, {
+    "model": "shakeitup.album_by_genre",
+    "pk": 4,
+    "fields": {
+        "genre": 3,
+        "album": 2
+    }
+}, {
+    "model": "shakeitup.album_by_genre",
+    "pk": 5,
+    "fields": {
+        "genre": 4,
+        "album": 3
+    }
+}, {
+    "model": "shakeitup.artist",
+    "pk": 1,
+    "fields": {
+        "stage_name": "Solange Knowles",
+        "birth_name": "Solange Knowles"
+    }
+}, {
+    "model": "shakeitup.artist",
+    "pk": 2,
+    "fields": {
+        "stage_name": "Serge Gainsbourg",
+        "birth_name": "Serge Gainsbourg"
+    }
+}, {
+    "model": "shakeitup.artist",
+    "pk": 3,
+    "fields": {
+        "stage_name": "The Weeknd",
+        "birth_name": "Abel Makkonen Tesfaye"
+    }
+}, {
+    "model": "shakeitup.artist_on_album",
+    "pk": 1,
+    "fields": {
+        "artist": 1,
+        "album": 1
+    }
+}, {
+    "model": "shakeitup.artist_on_album",
+    "pk": 2,
+    "fields": {
+        "artist": 2,
+        "album": 3
+    }
+}, {
+    "model": "shakeitup.artist_on_album",
+    "pk": 3,
+    "fields": {
+        "artist": 3,
+        "album": 2
+    }
+}, {
+    "model": "shakeitup.artist_on_album",
+    "pk": 4,
+    "fields": {
+        "artist": 1,
+        "album": 2
+    }
+}, {
+    "model": "shakeitup.song",
+    "pk": 1,
+    "fields": {
+        "featured_artist": 1,
+        "collaborating_artist": 1,
+        "composing_artist": 1,
+        "songwriter_artist": 1,
+        "song_title": "Cranes in the Sky",
+        "date_released": "2017-02-06",
+        "song_length": "00:03:00",
+        "danceability": "1.0000000000"
+    }
+}, {
+    "model": "shakeitup.song",
+    "pk": 2,
+    "fields": {
+        "featured_artist": 3,
+        "collaborating_artist": 3,
+        "composing_artist": 3,
+        "songwriter_artist": 3,
+        "song_title": "I feel it coming",
+        "date_released": "2017-02-06",
+        "song_length": "00:05:00",
+        "danceability": "100.0000000000"
+    }
+}, {
+    "model": "shakeitup.song",
+    "pk": 3,
+    "fields": {
+        "featured_artist": 2,
+        "collaborating_artist": 2,
+        "composing_artist": 2,
+        "songwriter_artist": 2,
+        "song_title": "En Relisant Ta Lettre",
+        "date_released": "2017-02-06",
+        "song_length": "00:04:00",
+        "danceability": "0.1000000000"
+    }
+}, {
+    "model": "shakeitup.song_by_genre",
+    "pk": 1,
+    "fields": {
+        "song": 1,
+        "genre": 1
+    }
+}, {
+    "model": "shakeitup.song_by_genre",
+    "pk": 2,
+    "fields": {
+        "song": 2,
+        "genre": 2
+    }
+}, {
+    "model": "shakeitup.song_by_genre",
+    "pk": 3,
+    "fields": {
+        "song": 2,
+        "genre": 3
+    }
+}, {
+    "model": "shakeitup.song_by_genre",
+    "pk": 4,
+    "fields": {
+        "song": 1,
+        "genre": 3
+    }
+}, {
+    "model": "shakeitup.song_by_genre",
+    "pk": 5,
+    "fields": {
+        "song": 3,
+        "genre": 4
+    }
+}, {
+    "model": "shakeitup.song_on_album",
+    "pk": 1,
+    "fields": {
+        "album": 1,
+        "song": 1
+    }
+}, {
+    "model": "shakeitup.song_on_album",
+    "pk": 2,
+    "fields": {
+        "album": 2,
+        "song": 2
+    }
+}, {
+    "model": "shakeitup.song_on_album",
+    "pk": 3,
+    "fields": {
+        "album": 3,
+        "song": 3
+    }
+}]

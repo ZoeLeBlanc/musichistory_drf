@@ -1,24 +1,20 @@
 from rest_framework import serializers
 from shakeitup.models import *
 
-class ArtistByGenreSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = artistsbygenres_model.Artist_By_Genre
-        fields = '__all__'
-
 class ArtistOnAlbumSerializer(serializers.HyperlinkedModelSerializer):
+    ''' The ArtistOnAlbumSerializer class translates the Artist_On_Album model into other formats, in this case JSON by default. This serializer returns all values.
+
+    Author: Zoe LeBlanc
+    '''
     class Meta:
         model = artistsonalbums_model.Artist_On_Album
         fields = '__all__'
 
-
-class ArtistGenresSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = artistsbygenres_model.Artist_By_Genre
-        fields = ('url', 'genre')
-        depth = 1
-
 class ArtistAlbumsSerializer(serializers.HyperlinkedModelSerializer):
+    ''' The ArtistAlbumsSerializer class translates the Artist_On_Album model into other formats, in this case JSON by default. This serializer returns specific fields.
+
+    Author: Zoe LeBlanc
+    '''
     class Meta:
         model = artistsonalbums_model.Artist_On_Album
         fields = ('url', 'album')
@@ -26,9 +22,12 @@ class ArtistAlbumsSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class ArtistSerializer(serializers.HyperlinkedModelSerializer):
-    artist_genres = ArtistGenresSerializer(many=True, read_only=True)
-    album_artists = ArtistAlbumsSerializer(many=True, read_only=True)
+    ''' The ArtistSerializer class translates the Artist_On_Album model into other formats, in this case JSON by default. 
+
+    Author: Zoe LeBlanc
+    '''
+    artist_albums = ArtistAlbumsSerializer(many=True, read_only=True)
     class Meta:
         model = artist_model.Artist
-        fields = ('url', 'stage_name', 'birth_name', 'artist_genres', 'album_artists')
+        fields = ('url', 'stage_name', 'birth_name', 'artist_albums')
         depth = 2

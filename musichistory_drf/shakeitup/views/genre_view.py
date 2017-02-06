@@ -4,8 +4,9 @@ from shakeitup.models import *
 
 
 class GenreViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint that allows Orders to be viewed or edited.
-    """
+    ''' The GenreViewSet class is a view that lists out all genres and each genre's details.
+
+    Author: Zoe LeBlanc
+    '''
     queryset = genre_model.Genre.objects.all()
     serializer_class = genre_serializer.GenreSerializer
