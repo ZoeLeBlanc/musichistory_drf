@@ -3,7 +3,7 @@ from shakeitup.serializers import *
 from shakeitup.models import *
 
 class AlbumByGenreViewSet(viewsets.ModelViewSet):
-    ''' The AlbumByGenreViewSet class is a view that lists out all album's genres.
+    ''' The AlbumByGenreViewSet class is a view that lists out all albums' genres.
 
     Author: Zoe LeBlanc
     '''
