@@ -27,11 +27,9 @@ router.register(r'songsonplaylists', playlist_view.SongOnPlaylistViewSet)
 router.register(r'playlists', playlist_view.PlaylistViewSet)
 router.register(r'genres', genre_view.GenreViewSet)
 router.register(r'artistsonalbums', artist_view.ArtistOnAlbumViewSet)
-router.register(r'artistsbygenres', artist_view.ArtistByGenreViewSet)
 router.register(r'artists', artist_view.ArtistViewSet)
 router.register(r'albumsbygenres', album_view.AlbumByGenreViewSet)
 router.register(r'albums', album_view.AlbumViewSet)
-router.register(r'playlistsbyusers', playlist_view.PlaylistByUserViewSet)
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
